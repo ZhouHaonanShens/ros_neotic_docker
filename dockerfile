@@ -20,6 +20,8 @@ RUN mkdir -p /root/.vnc
 
 # Copy any additional files or scripts into the container
 COPY ./xstartup /root/.vnc/xstartup
+COPY ./scripts  /root
+COPY ./catkin   /root
 
 # Set any environment variables if needed
 ENV USER=root
